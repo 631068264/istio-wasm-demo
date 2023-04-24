@@ -1,0 +1,10 @@
+apiVersion: extensions.istio.io/v1alpha1
+kind: WasmPlugin
+metadata:
+  name: wasm-demo
+spec:
+  url: oci://xx.xx.xx:8080/istio/wasm_demo
+  phase: AUTHN
+  pluginConfig:
+    header: "xx"
+    values: "fadfa"
